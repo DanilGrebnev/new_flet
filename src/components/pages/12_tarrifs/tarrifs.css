@@ -1,3 +1,8 @@
-#tarrifs{
-    
+#tarrifs {
+    margin-top: 160px;
+}
+
+#t_wrapper {
+    display: flex;
+    justify-content: space-between;
 }

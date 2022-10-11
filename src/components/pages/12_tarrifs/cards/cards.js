@@ -14,7 +14,7 @@ const Cards = ({ title, price, imgList, list }) => {
             </div>
             <ul>
                 {list.map(list => {
-                    <li className='lists'>{list}</li>
+                    return <li className='lists'>{list}</li>
                 })}
             </ul>
         </div>
