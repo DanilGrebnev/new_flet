@@ -1,5 +1,5 @@
 .BtnGreen {
-    font-size: 24px;
+    font-size: calc(12px + 12 * (100vw / 1940));
     padding: 16px 38px;
     background: #58B80C;
     border-radius: 10px;

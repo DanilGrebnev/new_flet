@@ -1,0 +1,40 @@
+#eco {
+    margin-top: 120px;
+    color: white;
+}
+
+#e_wrapper {
+    margin-top: 63px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.e_card {
+    max-width: max-content;
+    text-align: center;
+}
+
+#e_wrapper .e_card:not(:first-child) {
+    margin-left: 20px;
+}
+
+.e_card h5,
+.e_card p {
+    /* font-size: calc(24px + 8 * (100vw / 1940)); */
+    font-size: 24px;
+}
+
+#e_ok {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    z-index: -1;
+}
+
+.e_card p {
+    max-width: 350px;
+    font-weight: 300;
+    margin-top: 10px;
+}

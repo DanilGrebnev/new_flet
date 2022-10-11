@@ -1,6 +1,6 @@
 import BtnGreen from '../../elements/BtnGreen/BtnGreen.js'
 import './system.css'
-import phone from '../../images/2_system/phone.png'
+import phone from '../../img/2_system/phone.png'
 
 const System = _ => {
 

@@ -1,0 +1,27 @@
+#bonus {
+    color: white;
+    margin-top: 108px;
+}
+
+#b_wrapper {
+    display: flex;
+}
+
+#b_wrapper h3 {
+    padding-bottom: 15px;
+    padding-left: 60px;
+    margin-top: 60px;
+    margin-bottom: 15px;
+    font-size: calc(13px + 23 * (100vw / 1920));
+    border-bottom: 1px solid white;
+}
+
+#b_wrapper p, #b_wrapper h4 {
+    font-size: calc(8px + 16 * (100vw / 1940));
+    margin-left: 60px;
+}
+#b_wrapper h4{
+    font-weight: 600;
+    margin-top:30px;
+    margin-bottom: 15px;
+}

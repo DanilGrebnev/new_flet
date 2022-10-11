@@ -1,4 +1,6 @@
 import './flet.css'
+import content from './card_content'
+import Card from '../../elements/card/card'
 
 const Flet = _ => {
     return (
@@ -8,6 +10,14 @@ const Flet = _ => {
                 Широкие возможности, которые открываются
                 перед вашим бизнесом, с началом работы с системой
             </p>
+            <div id="f_wrapper">
+                {content.map((el, i) => <Card
+                    key={i}
+                    img={el.img}
+                    title={el.title}
+                    desc={el.desc}
+                />)}
+            </div>
         </section>
     )
 }

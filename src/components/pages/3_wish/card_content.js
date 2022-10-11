@@ -1,8 +1,8 @@
-import heart from '../../../images/3_wish/heart-tick.png'
-import reserve from '../../../images/3_wish/reserve.png'
-import clock from '../../../images/3_wish/clock.png'
+import heart from '../../img/3_wish/heart-tick.png'
+import reserve from '../../img/3_wish/reserve.png'
+import clock from '../../img/3_wish/clock.png'
 
-export const state = [
+const card_content = [
     {
         img: heart,
         title: "комфорт",
@@ -38,3 +38,5 @@ export const state = [
         },
     },
 ]
+
+export default card_content

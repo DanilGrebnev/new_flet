@@ -12,6 +12,10 @@
     ;
 }
 
+#wish .card {
+    position: absolute;
+}
+
 #wish h1,
 #wish>p {
     max-width: 688px;

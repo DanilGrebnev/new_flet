@@ -1,6 +1,6 @@
 import './header.css'
-import logo from '../../images/1_header/logo.png'
-import login from '../../images/1_header/login.svg'
+import logo from '../../img/1_header/logo.png'
+import login from '../../img/1_header/login.svg'
 
 const Header = _ => {
     return (

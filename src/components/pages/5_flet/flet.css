@@ -5,3 +5,12 @@
 #flet p {
     margin-top: 28px;
 }
+
+#f_wrapper {
+    margin-top: 40px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+}
+

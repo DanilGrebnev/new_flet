@@ -1,0 +1,42 @@
+#starts {
+    margin-top: 172px;
+    display: flex;
+    justify-content: end;
+    height: 812px;
+    position: relative;
+    width: 100%;
+}
+
+#s_content {
+    width: 700px;
+}
+
+#s_content .h1_sub {
+    margin-top: 31px;
+}
+
+#s_img {
+    position: absolute;
+    left: 0;
+    max-width: 900px;
+    width: 100%;
+    height: 900px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+#starts a {
+    display: flex;
+    margin-top: 165px;
+    align-items: center;
+    color: white;
+}
+
+#starts .h1_sub {
+    line-height: 2;
+}
+
+#folder {
+    margin-right: 30px;
+}

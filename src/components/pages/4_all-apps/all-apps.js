@@ -1,6 +1,6 @@
 import BtnGreen from '../../elements/BtnGreen/BtnGreen'
 import './all-apps.css'
-import img from '../../images/4_all-apps/phone.png'
+import img from '../../img/4_all-apps/phone.png'
 
 const AllApps = _ => {
 

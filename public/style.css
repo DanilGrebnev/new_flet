@@ -8,13 +8,22 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+a {
+    cursor: pointer;
+}
+
 body {
     background: black;
+    display: flex;
+    justify-content: center;
 }
 
 #root {
+    max-width: 1440px;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
@@ -27,10 +36,37 @@ h1 {
     font-size: 80px;
     font-weight: 600;
     line-height: 1;
+    font-size: calc(32px + 48 * ((100vw - 320px) / (1920 - 320)));
 }
 
 .h1_sub {
     color: white;
-    font-size: 24px;
+    margin-top: 30px;
     font-weight: 300;
+    font-size: calc(10px + 16 * ((100vw - 320px) / (1920 - 320)));
+}
+
+/* Отмена адаптации шрифта */
+@media screen and (min-width:1940px) {
+    h1 {
+        font-size: 80px;
+    }
+
+    .h1_sub,
+    .BtnGreen {
+        font-size: 24px !important;
+    }
+
+    .card h4 {
+        font-size: 36px !important;
+    }
+
+    .card>p {
+        font-size: 24px !important;
+    }
+
+    #flet .card h4,
+    #flet .card p {
+        font-size: 24px;
+    }
 }

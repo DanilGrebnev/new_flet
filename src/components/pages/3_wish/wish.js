@@ -1,7 +1,7 @@
 import './wish.css'
-import './card/card.css'
-import { state } from './card/state'
-import Card from './card/card'
+import '../../elements/card/card.css'
+import content from './card_content'
+import Card from '../../elements/card/card'
 
 const Wish = _ => {
 
@@ -15,9 +15,9 @@ const Wish = _ => {
                 Его желания очень быстро и
                 кардинально меняются
             </p>
-            {state.map((el, i) => <Card
+            {content.map((el, i) => <Card
                 key={i}
-                id={i + 1}
+                id={"w_card-" + (i + 1)}
                 img={el.img}
                 title={el.title}
                 desc={el.desc}
