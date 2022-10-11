@@ -1,0 +1,20 @@
+.t_card {
+    background: rgba(48, 48, 48, .7);
+}
+
+.t_card h4 {
+    font-size: 36px;
+}
+
+.t_card p {
+    font-size: 80px;
+}
+
+.t_card img {
+    width: 40px;
+    height: 40px;
+}
+
+.t_img{
+    display: flex;
+}

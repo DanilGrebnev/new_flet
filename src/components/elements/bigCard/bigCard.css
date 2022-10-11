@@ -11,7 +11,7 @@
     margin-bottom: 30px;
 }
 
-.big_card ul li {
+.lists {
     font-size: calc(8px + 12 * (100vw / 1940));
     margin-top: 24px;
     margin-left: 45px;
@@ -19,7 +19,7 @@
     font-weight: 300;
 }
 
-.big_card ul li:before {
+.lists:before {
     content: '';
     display: block;
     width: 5px;
