@@ -1,0 +1,39 @@
+.big_card {
+    overflow: hidden;
+    border-radius: 30px;
+    background: rgba(48, 48, 48, .7);
+    display: flex;
+    align-items: flex-end;
+}
+
+.big_card ul {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.big_card ul li {
+    font-size: calc(8px + 12 * (100vw / 1940));
+    margin-top: 24px;
+    margin-left: 45px;
+    position: relative;
+    font-weight: 300;
+}
+
+.big_card ul li:before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    border: 6px solid #58B80C;
+    border-radius: 50%;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.big_card__img {
+    max-width: 500px;
+    width: 100%;
+    margin-top: 80px;
+}

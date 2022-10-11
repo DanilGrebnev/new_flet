@@ -16,8 +16,7 @@
 #st_wrapper h3 {
     display: block;
     text-align: start;
-    font-size: 32px;
-    font-size: calc(20px + 12 * (100vw / 1940));
+    font-size: calc(13px + 23 * (100vw / 1920));
     border-bottom: 1px solid white;
     padding-bottom: 10px;
     margin-bottom: 10px;
