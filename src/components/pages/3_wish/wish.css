@@ -1,0 +1,29 @@
+#wish {
+    margin-top: 121px;
+    width: 100%;
+    height: 866px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 688px;
+    grid-template-rows: repeat(2, minmax(0, max-content));
+    grid-template-areas:
+        " . w_h1"
+        " . wish_p"
+    ;
+}
+
+#wish h1,
+#wish>p {
+    max-width: 688px;
+    width: 100%;
+}
+
+#wish h1 {
+    grid-area: w_h1;
+}
+
+#wish>p {
+    grid-area: wish_p;
+    margin-top: 30px;
+    max-width: 380px;
+}

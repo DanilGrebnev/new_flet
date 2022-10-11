@@ -1,0 +1,27 @@
+#system {
+    overflow: hidden;
+    margin-top: 115px;
+    height: 755px;
+    width: 100%;
+    position: relative;
+}
+
+#system h1 {
+    max-width: 708px;
+    width: 100%;
+}
+
+#system p {
+    margin: 71px 0 50px 0;
+    max-width: 550px;
+}
+
+#system>div {
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 723px;
+    width: 100%;
+    height: 731px;
+    z-index: -1;
+}
