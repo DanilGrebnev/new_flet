@@ -1,8 +1,13 @@
 .BtnGreen {
+    cursor: pointer;
     font-size: calc(12px + 12 * (100vw / 1940));
     padding: 16px 38px;
     background: #58B80C;
     border-radius: 10px;
-    color: white;
     border: none;
+    color: white;
+}
+
+.BtnGreen a {
+    color: white;
 }

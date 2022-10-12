@@ -18,6 +18,7 @@ const Wish = _ => {
             {content.map((el, i) => <Card
                 key={i}
                 id={"w_card-" + (i + 1)}
+                cls1="font_36"
                 img={el.img}
                 title={el.title}
                 desc={el.desc}
