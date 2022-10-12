@@ -10,7 +10,7 @@ const System = _ => {
 
     return (
         <section id="system" className='container'>
-            <h1>
+            <h1 className='font_80'>
                 Умная система
                 онлайн-ритейла
             </h1>

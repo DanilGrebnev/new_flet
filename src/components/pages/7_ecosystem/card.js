@@ -31,12 +31,12 @@ export const card = [
     },
 ]
 
-const Card = ({ img, title, desc }) => {
+const Card = ({ img, title, desc, cls1, cls2 }) => {
     return (
         <div className='e_card'>
             <img src={img} />
-            <h5>{title}</h5>
-            <p>
+            <h5 className={cls1}>{title}</h5>
+            <p className={cls2}>
                 {desc}
             </p>
         </div>

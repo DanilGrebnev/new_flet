@@ -10,10 +10,10 @@ const Style = _ => {
         <section id="style">
             <div id="st_wrapper">
                 <div id="st_left">
-                    <h3 className='h3_32px'>
+                    <h3 className='font_36'>
                         Ваш узнаваемый стиль
                     </h3>
-                    <p>
+                    <p className='font_24'>
                         Добавьте свой логотип, изображения
                         товаров, фирменные цвета. Сделайте
                         приложение более узнаваемым.

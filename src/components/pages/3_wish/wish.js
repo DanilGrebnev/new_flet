@@ -7,7 +7,7 @@ const Wish = _ => {
 
     return (
         <section id="wish" className='container'>
-            <h1>
+            <h1 className='font_80'>
                 Чего хочет ваш
                 потребитель?
             </h1>

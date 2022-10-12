@@ -1,19 +1,18 @@
 import './header.css'
 import logo from '../../img/1_header/logo.png'
-import login from '../../img/1_header/login.svg'
+import Login from '../../elements/login/login'
+import Logo from '../../elements/logo/logo'
+
 
 const Header = _ => {
     return (
         <section id="header" className='container'>
-            <img id="h_logo" src={logo} />
+            <Logo />
             <div id="h_wrapper">
-                <a>О системе</a>
-                <a>Инструкция</a>
-                <a>Тарифы</a>
-                <a>
-                    <p>Вход/Регистрация</p>
-                    <img id="h_login" src={login} />
-                </a>
+                <a className='font_24'>О системе</a>
+                <a className='font_24'>Инструкция</a>
+                <a className='font_24'>Тарифы</a>
+                <Login />
             </div>
         </section>
     )

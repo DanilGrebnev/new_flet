@@ -17,6 +17,7 @@ body {
     background: black;
     display: flex;
     justify-content: center;
+    line-height: 1.5;
 }
 
 #root {
@@ -34,18 +35,33 @@ body {
 
 h1 {
     color: white;
-    font-size: 80px;
     font-weight: 600;
     line-height: 1;
-    font-size: calc(32px + 48 * ((100vw - 320px) / (1920 - 320)));
 }
 
 .h1_sub {
     color: white;
     margin-top: 30px;
     font-weight: 300;
-    font-size: calc(10px + 16 * ((100vw - 320px) / (1920 - 320)));
+    font-size: calc(10px + 16 * ((100vw - 320px) / (1940 - 320)));
 }
+
+.font_80 {
+    font-size: calc(32px + 48 * ((100vw - 320px) / (1920 - 320)));
+}
+
+.font_36 {
+    font-size: calc(24px + 12 * ((100vw - 320px) / (1940 - 320)));
+}
+
+.font_24 {
+    font-size: calc(11px + 13 * ((100vw - 320px) / (1920 - 320)));
+}
+
+.font_20 {
+    font-size: calc(8px + 12 * ((100vw - 320px) / (1920 - 320)));
+}
+
 
 /* Отмена адаптации шрифта */
 @media screen and (min-width:1940px) {
@@ -53,21 +69,20 @@ h1 {
         font-size: 80px;
     }
 
+    .font_80 {
+        font-size: 80px;
+    }
+
     .h1_sub,
-    .BtnGreen {
+    .font_24 {
         font-size: 24px !important;
     }
 
-    .card h4 {
+    .font_36 {
         font-size: 36px !important;
     }
 
-    .card>p {
-        font-size: 24px !important;
-    }
-
-    #flet .card h4,
-    #flet .card p {
-        font-size: 24px;
+    .font_20 {
+        font-size: 20px;
     }
 }

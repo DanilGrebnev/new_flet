@@ -5,20 +5,18 @@ import Card from './card'
 
 const Ecosystem = _ => {
 
-    const style = {
-        bakgroundImage: `url(${ok})`
-    }
-
     return (
         <section id="eco" className='container'>
-            <h1>Приложения, входящие в экосистему</h1>
-            <p className='h1_sub'>
+            <h1 className='font_80'>Приложения, входящие в экосистему</h1>
+            <p className='h1_sub font_24'>
                 Мобильные приложения, позволяющие максимально автоматизировать все основные бизнес-процессы
             </p>
             <div id="e_wrapper">
                 {card.map((el, i) => <Card
                     key={i}
                     img={el.img}
+                    cls1="font_24"
+                    cls2="font_24"
                     title={el.title}
                     desc={el.desc}
                 />)}

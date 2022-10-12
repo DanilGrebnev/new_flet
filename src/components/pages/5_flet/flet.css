@@ -2,10 +2,6 @@
     margin-top: 143px;
 }
 
-#flet p {
-    margin-top: 28px;
-}
-
 #f_wrapper {
     margin-top: 40px;
     display: grid;
@@ -14,3 +10,20 @@
     gap: 20px;
 }
 
+#flet .card h4 {
+    font-weight: 600;
+    max-width: 330px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+#flet .card p {
+    font-weight: 300;
+    max-width: 90%;
+    margin-bottom: 40px;
+}
+
+#flet .card img {
+    width: 70px;
+    margin-top: 40px;
+}

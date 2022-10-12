@@ -8,8 +8,8 @@ const Courier = _ => {
     return (
         <section id="courier" className='container'>
             <img src={truck} />
-            <h1>Приложение «Курьер»</h1>
-            <BigCard img={phone} list={list} />
+            <h1 className='font_80'>Приложение «Курьер»</h1>
+            <BigCard cls="font_20" img={phone} list={list} />
         </section>
     )
 }

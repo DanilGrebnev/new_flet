@@ -20,12 +20,6 @@
     margin-left: 20px;
 }
 
-.e_card h5,
-.e_card p {
-    /* font-size: calc(24px + 8 * (100vw / 1940)); */
-    font-size: 24px;
-}
-
 #e_ok {
     position: absolute;
     top: 20%;

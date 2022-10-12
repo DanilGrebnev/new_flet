@@ -1,0 +1,52 @@
+#form {
+    padding: 50px 100px;
+    margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+}
+
+#form section {
+    display: flex;
+    justify-content: space-between;
+}
+
+#form h2 {
+    font-size: 42px;
+    text-align: center;
+    max-width: 1500px;
+    width: 100%;
+    margin: 20px 0 70px 0;
+}
+
+#form input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid green;
+    width: 320px;
+    margin-bottom: 88px;
+}
+
+#f_submit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#form .BtnGreen {
+    padding: 0px;
+    height: 60px;
+    box-sizing: content-box;
+    display: inline-block;
+    width: 330px;
+}
+
+#f_submit p {
+    max-width: 750px;
+    padding-right: 30px;
+}
+
+#f_submit a {
+    color: green;
+}

@@ -16,15 +16,9 @@
 #st_wrapper h3 {
     display: block;
     text-align: start;
-    font-size: calc(13px + 23 * (100vw / 1920));
     border-bottom: 1px solid white;
     padding-bottom: 10px;
     margin-bottom: 10px;
-}
-
-#st_wrapper p {
-    font-size: 24px;
-    font-size: calc(10px + 14 * (100vw / 1940));
 }
 
 #st_left {
