@@ -7,19 +7,16 @@ import whatsap from '../../img/14_footer/whatsapp.png'
 import phone from '../../img/14_footer/phone.png'
 import location from '../../img/14_footer/location.png'
 import email from '../../img/14_footer/email.png'
+import Link from '../1_header/h_item'
 
 const Footer = _ => {
     return (
         <section id="footer">
             <section id="footer_wrapper" className='container'>
                 <div id='f_left'>
-                    <a>
-                        О системе
-                    </a>
-                    <a>
-                        Инструкции
-                    </a>
-                    <a>Тарифы</a>
+                    <Link cls="font_20" id="#flet" text="О системе" />
+                    <Link cls="font_20" id="#starts" text="Инструкция" />
+                    <Link cls="font_20" id="#tarrifs" text="Тарифы" />
                     <div>
                         <img src={telegram} />
                         <img src={vk} />

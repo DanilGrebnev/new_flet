@@ -7,9 +7,24 @@
 }
 
 #header a {
+    height: min-content;
     color: white;
-    display: flex;
-    align-items: center;
+    position: relative;
+}
+
+#header a:not(.login):before {
+    position: absolute;
+    content: "";
+    display: block;
+    background: green;
+    height: 2px;
+    width: 0;
+    bottom: 0px;
+    transition: .5s;
+}
+
+#header a:not(.login):hover:before{
+    width: 100%;
 }
 
 #h_wrapper {
@@ -17,4 +32,5 @@
     max-width: 830px;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
 }
