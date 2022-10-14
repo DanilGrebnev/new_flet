@@ -9,7 +9,7 @@ const System = _ => {
     }
 
     return (
-        <section id="system" className='container'>
+        <section id="system" className='container m_top'>
             <h1 className='font_80'>
                 Умная система
                 онлайн-ритейла

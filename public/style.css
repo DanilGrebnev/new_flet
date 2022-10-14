@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 
+:root {
+    --m-top: calc(34px + 56 * ((100vw - 320px) / (1940 - 320)));
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -38,6 +42,10 @@ body {
     width: 100%;
 }
 
+.m_top {
+    margin-top: var(--m-top);
+}
+
 h1 {
     color: white;
     font-weight: 600;
@@ -67,6 +75,17 @@ h1 {
     font-size: calc(8px + 12 * ((100vw - 320px) / (1920 - 320)));
 }
 
+@media (max-width:1250px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width:390px) {
+    .container {
+        padding: 0 10px;
+    }
+}
 
 /* Отмена адаптации шрифта */
 @media screen and (min-width:1940px) {
@@ -89,5 +108,9 @@ h1 {
 
     .font_20 {
         font-size: 20px;
+    }
+
+    .login_img--adaptive {
+        width: 290px;
     }
 }

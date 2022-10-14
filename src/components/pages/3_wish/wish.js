@@ -2,8 +2,23 @@ import './wish.css'
 import '../../elements/card/card.css'
 import content from './card_content'
 import Card from '../../elements/card/card'
+import Slider from '../../elements/slider/slider'
 
 const Wish = _ => {
+
+    const cards = content.map((el, i) => {
+        return <div key={i}>
+            <Card
+                id={"w_card-" + (i + 1)}
+                cls1="font_36"
+                img={el.img}
+                title={el.title}
+                desc={el.desc}
+            />
+        </div>
+    })
+
+
 
     return (
         <section id="wish" className='container'>
@@ -15,14 +30,10 @@ const Wish = _ => {
                 Его желания очень быстро и
                 кардинально меняются
             </p>
-            {content.map((el, i) => <Card
-                key={i}
-                id={"w_card-" + (i + 1)}
-                cls1="font_36"
-                img={el.img}
-                title={el.title}
-                desc={el.desc}
-            />)}
+            <div id="card-wrapper">
+                {cards}
+            </div>
+            <Slider element={cards} amount={content.length} />
         </section>
     )
 }

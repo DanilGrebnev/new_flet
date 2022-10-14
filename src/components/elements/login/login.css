@@ -2,4 +2,9 @@
     color: white;
     display: flex;
     align-items: center;
+    width: max-content;
+}
+
+.login_img--adaptive {
+    width: calc(19px + 37 * ((100vw - 320px) / (1920 - 320)));
 }

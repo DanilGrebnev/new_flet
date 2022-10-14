@@ -16,20 +16,20 @@ import Footer from './components/pages/14_footer/footer';
 const App = _ => {
   return (
     <>
-      <Header />
-      <System />
+      {/* <Header /> */}
+      {/* <System /> */}
       <Wish />
-      <AllApps />
-      <Flet />
-      <Starts />
-      <Ecosystem />
-      <Style />
-      <Bonus />
-      <Store />
-      <Courier />
-      <Tarrifs />
-      <Form />
-      <Footer />
+      {/* <AllApps /> */}
+      {/* <Flet /> */}
+      {/* <Starts /> */}
+      {/* <Ecosystem /> */}
+      {/* <Style /> */}
+      {/* <Bonus /> */}
+      {/* <Store /> */}
+      {/* <Courier /> */}
+      {/* <Tarrifs /> */}
+      {/* <Form /> */}
+      {/* <Footer /> */}
     </>
   );
 }

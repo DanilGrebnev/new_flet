@@ -1,7 +1,10 @@
+:root {
+    --s_img-adaptive: calc(300px + 323 * ((100vw - 320px) / (1940 - 320)));
+}
+
 #system {
     overflow: hidden;
-    margin-top: 115px;
-    height: 755px;
+    height: var(--s_img-adaptive);
     width: 100%;
     position: relative;
 }
@@ -21,7 +24,45 @@
     right: 0;
     top: 0;
     max-width: 723px;
-    width: 100%;
-    height: 731px;
+    width: var(--s_img-adaptive);
+    height: var(--s_img-adaptive);
     z-index: -1;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (max-width:960px) {
+    #system {
+        height: auto;
+    }
+
+    #system .BtnGreen {
+        margin-bottom: 200px;
+    }
+
+    #system>div {
+        top: auto;
+        bottom: 0;
+    }
+
+    #system p {
+        max-width: 50%;
+    }
+}
+
+@media (max-width:450px) {
+    #system .BtnGreen {
+        padding: 15px;
+    }
+
+    /* #system .BtnGreen {
+        margin-bottom: 280px;
+    } */
+
+}
+
+@media (max-width:390px) {
+    #system .BtnGreen {
+        padding: 10px;
+    }
 }

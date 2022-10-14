@@ -7,7 +7,7 @@ import whatsap from '../../img/14_footer/whatsapp.png'
 import phone from '../../img/14_footer/phone.png'
 import location from '../../img/14_footer/location.png'
 import email from '../../img/14_footer/email.png'
-import Link from '../1_header/h_item'
+import Link from '../1_header/h_link'
 
 const Footer = _ => {
     return (

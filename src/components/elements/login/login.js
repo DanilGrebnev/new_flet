@@ -4,7 +4,7 @@ const Login = _ => {
     return (
         <a href='#' className='login font_24'>
             <p>Вход/Регистрация</p>
-            <img id="h_login" src={login} />
+            <img className='login_img--adaptive' src={login} />
         </a>
     )
 }

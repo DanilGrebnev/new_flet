@@ -1,0 +1,24 @@
+.slider {
+    color: white;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slider_wrapper {
+    overflow: hidden;
+    width: 320px;
+    height: 300px;
+    position: relative;
+    
+}
+
+.slider_line {
+    position: absolute;
+    display: flex;
+    transition: 1s;
+}
+.slider_line >div{
+    padding: 0 10px;
+}
