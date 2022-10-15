@@ -81,9 +81,33 @@ h1 {
     }
 }
 
+@media screen and (max-width:350px) {
+    .BtnGreen {
+        font-size: 12px !important;
+        padding: 8px !important;
+    }
+}
+
 @media (max-width:390px) {
     .container {
         padding: 0 10px;
+    }
+
+    .slider_wrapper {
+        width: 270px !important;
+        height: 275px !important;
+    }
+
+    .card {
+        width: 250px !important;
+        height: 276px !important;
+        justify-content: space-evenly;
+    }
+
+    .card h4,
+    .card img,
+    .card p {
+        margin: 0 !important;
     }
 }
 

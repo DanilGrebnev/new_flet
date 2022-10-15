@@ -10,14 +10,15 @@ const AllApps = _ => {
 
     return (
         <section id="all-apps" className='container'>
-            <h1 className='font_80'>Мобильные приложения,
+            <h1 className='font_80'>
+                Мобильные приложения,
                 объединенные в единую экосистему
             </h1>
             <p className='h1_sub font_24'>
                 Сразу три приложения, автоматизируют работу любого бизнес-процесса
             </p>
             <BtnGreen />
-            <div style={style} />
+            <img src={img} />
         </section>
     )
 }

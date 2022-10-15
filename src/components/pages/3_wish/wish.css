@@ -32,8 +32,6 @@
     max-width: 380px;
 }
 
-/* font-size: calc(24px + 16 * ((100vw - 320px) / (1280 - 320))); */
-
 #wish .card {
     width: calc(278px + (344 - 278) * ((100vw - 320px) / (1920 - 320)));
 }
@@ -86,10 +84,12 @@
     }
 
     #wish .card {
+        width: auto;
         transform: none;
         margin: 0;
         position: static;
         left: 0;
+        height: 100%;
     }
 
     #wish .card p {
@@ -98,9 +98,11 @@
 
     #wish #card-wrapper {
         margin-top: 50px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-rows: auto;
+        gap: 20px;
     }
 }
 
@@ -115,11 +117,13 @@
         display: none;
     }
 
-    #wish .card{
+    #wish .card {
         width: 300px;
     }
 
     #wish .slider {
+        margin-top: 50px;
         display: flex;
     }
+
 }

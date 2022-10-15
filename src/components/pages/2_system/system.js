@@ -19,7 +19,7 @@ const System = _ => {
                 единую экосистему
             </p>
             <BtnGreen />
-            <div style={style} />
+            <img src={phone} />
         </section>
     )
 }

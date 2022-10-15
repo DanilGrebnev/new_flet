@@ -1,6 +1,6 @@
 .slider {
     color: white;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -9,9 +9,9 @@
 .slider_wrapper {
     overflow: hidden;
     width: 320px;
-    height: 300px;
+    height: 320px;
     position: relative;
-    
+
 }
 
 .slider_line {
@@ -19,6 +19,21 @@
     display: flex;
     transition: 1s;
 }
-.slider_line >div{
+
+.slider_line>div {
     padding: 0 10px;
+}
+
+.slider .prev img,
+.slider .next img {
+    width: 20px;
+}
+
+.slider .prev,
+.slider .next {
+    display: flex;
+}
+
+.slider .next img {
+    transform: rotate(180deg);
 }

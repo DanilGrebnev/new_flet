@@ -1,44 +1,65 @@
 import './slider.css'
 import { observer } from 'mobx-react-lite'
-import { useState } from 'react'
+import store from './store'
+import { useEffect, useRef, useState } from 'react'
+import arrow from '../../img/slider/arrow.png'
 
-const Slider = ({ element, amount }) => {
-    const [transform, setTransform] = useState(0)
-    const [count, setCount] = useState(1)
+const Slider = observer(({ card, amount }) => {
+    //Процент смещения
+    const [translateX, setTranslateX] = useState(0)
+    //Счётчик перелистнутых слайдов
+    const [count, setCount] = useState(0)
 
-    const n = 100 / amount
+    //Подсчитывает процент, на который должно произойти смещение
+    const step = _ => 100 / amount
 
     const next = _ => {
         setCount(p => p + 1)
-        setTransform(prev => prev - n)
-        if (count > amount) {
-            setTransform(prev => prev = 0)
-            count = 0
+        if (count === amount) {
+            setCount(0)
+            return setTranslateX(prev => prev = 0)
         }
-        console.clear()
-        console.log("count: " + count)
-        // console.log(amount)
+        setTranslateX(prev => prev -= step())
+
+        console.log(count)
     }
 
     const prev = _ => {
-        setCount(p => p -= 1)
-        console.log(count)
-
-        setTransform(prev => prev + n)
+        setCount(p => p - 1)
+        if (count === -1) {
+            count = (amount - 1)
+            return translateX = -66
+        }
+        setTranslateX(prev => prev += step())
     }
+
+    // // amount - количество слайдов
+    // const { next, prev, translateX, getCounertSlides } = store
+
+    // const wrapper = useRef(0)
+
+    // useEffect(() => {
+    //     getCounertSlides(amount)
+    // }, [])
 
     return (
         <section className="slider">
-            <div className="prev" onClick={prev}>prev</div>
+            <div className="prev" onClick={prev}>
+                <img src={arrow} />
+            </div>
             <div className="slider_wrapper">
-                <div style={{ transform: `translateX(${transform}%)` }} className="slider_line">
-                    {element}
+                <div
+                    className="slider_line"
+                    style={{ transform: `translateX(${translateX}%)` }} >
+                    {card}
                 </div>
             </div>
-            <div className="next" onClick={next}>next</div>
-        </section>
+            <div className="next" onClick={_ => next(amount)}>
+                <img src={arrow} />
+            </div>
+        </section >
     )
 
-}
+})
 
 export default Slider

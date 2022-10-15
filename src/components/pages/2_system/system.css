@@ -19,7 +19,7 @@
     max-width: 550px;
 }
 
-#system>div {
+#system>img {
     position: absolute;
     right: 0;
     top: 0;
@@ -27,8 +27,8 @@
     width: var(--s_img-adaptive);
     height: var(--s_img-adaptive);
     z-index: -1;
-    background-size: contain;
-    background-repeat: no-repeat;
+    object-fit: contain;
+    object-position: right;
 }
 
 @media (max-width:960px) {
@@ -40,7 +40,8 @@
         margin-bottom: 200px;
     }
 
-    #system>div {
+    #system>img {
+
         top: auto;
         bottom: 0;
     }
@@ -54,15 +55,16 @@
     #system .BtnGreen {
         padding: 15px;
     }
-
-    /* #system .BtnGreen {
-        margin-bottom: 280px;
-    } */
-
 }
 
 @media (max-width:390px) {
-    #system .BtnGreen {
+    /* #system .BtnGreen {
         padding: 10px;
+    } */
+}
+
+@media (max-width:360px) {
+    #system>img {
+        height: 300px;
     }
 }

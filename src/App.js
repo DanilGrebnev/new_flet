@@ -16,10 +16,10 @@ import Footer from './components/pages/14_footer/footer';
 const App = _ => {
   return (
     <>
-      {/* <Header /> */}
-      {/* <System /> */}
+      <Header />
+      <System />
       <Wish />
-      {/* <AllApps /> */}
+      <AllApps />
       {/* <Flet /> */}
       {/* <Starts /> */}
       {/* <Ecosystem /> */}

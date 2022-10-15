@@ -18,8 +18,6 @@ const Wish = _ => {
         </div>
     })
 
-
-
     return (
         <section id="wish" className='container'>
             <h1 className='font_80'>
@@ -33,7 +31,7 @@ const Wish = _ => {
             <div id="card-wrapper">
                 {cards}
             </div>
-            <Slider element={cards} amount={content.length} />
+            <Slider card={cards} amount={content.length} />
         </section>
     )
 }
