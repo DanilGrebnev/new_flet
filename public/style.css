@@ -94,12 +94,12 @@ h1 {
     }
 
     .slider_wrapper {
-        width: 270px !important;
+        width: 290px !important;
         height: 275px !important;
     }
 
     .card {
-        width: 250px !important;
+        width: 280px !important;
         height: 276px !important;
         justify-content: space-evenly;
     }
@@ -109,9 +109,13 @@ h1 {
     .card p {
         margin: 0 !important;
     }
+
+    .card h4 {
+        font-size: 24px;
+    }
 }
 
-/* Отмена адаптации шрифта */
+/* Отмена адаптации */
 @media screen and (min-width:1940px) {
     h1 {
         font-size: 80px;
@@ -135,6 +139,14 @@ h1 {
     }
 
     .login_img--adaptive {
-        width: 290px;
+        width: 56px !important;
+    }
+
+    #s_img{
+        width: 700px !important;
+    }
+
+    #wish .card{
+        width: 350px !important;
     }
 }

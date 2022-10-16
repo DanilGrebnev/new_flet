@@ -20,11 +20,11 @@ const App = _ => {
       <System />
       <Wish />
       <AllApps />
-      {/* <Flet /> */}
-      {/* <Starts /> */}
-      {/* <Ecosystem /> */}
-      {/* <Style /> */}
-      {/* <Bonus /> */}
+      <Flet />
+      <Starts />
+      <Ecosystem />
+      <Style />
+      <Bonus />
       {/* <Store /> */}
       {/* <Courier /> */}
       {/* <Tarrifs /> */}

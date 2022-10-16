@@ -1,6 +1,6 @@
 import "./starts.css"
 import folder from '../../img/6_starts/folder.png'
-import video from '../../img/6_starts/video.svg'
+import video from '../../img/6_starts/video.png'
 
 const Starts = _ => {
 
@@ -10,7 +10,7 @@ const Starts = _ => {
 
     return (
         <section id="starts" >
-            <div style={style} id="s_img" />
+            {/* <div style={style} id="s_img" />
             <div id="s_content">
                 <h1 className="font_80">Как начать работать с Флет</h1>
                 <p className="h1_sub font_24">Посмотрите короткие видео инструкции о работе системы.
@@ -21,7 +21,17 @@ const Starts = _ => {
                     <img id="folder" src={folder} />
                     <p>Смотреть инструкции</p>
                 </a>
-            </div>
+            </div> */}
+            <img src={video} id="s_img" />
+            <h1 className="font_80">Как начать работать с Флет</h1>
+            <p className="h1_sub font_24">Посмотрите короткие видео инструкции о работе системы.
+                О том, как пройти  регистрацию, ввести данные,
+                заполнить товары и многое другое
+            </p>
+            <a>
+                <img id="folder" src={folder} />
+                <p className="font_24">Смотреть инструкции</p>
+            </a>
         </section>
     )
 }

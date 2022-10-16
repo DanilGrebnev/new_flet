@@ -127,3 +127,12 @@
     }
 
 }
+
+@media (max-width: 410px){
+    #wish .slider{
+        justify-content: center;
+    }
+    #wish .slider .next, #wish .slider .prev{
+        display: none;
+    }
+}

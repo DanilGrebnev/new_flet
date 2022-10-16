@@ -11,9 +11,11 @@
 .card img {
     width: 150px;
     margin-top: 37px;
+    object-position: center;
 }
 
 .card h4 {
+    line-height: normal;
     margin-top: 28px;
 }
 

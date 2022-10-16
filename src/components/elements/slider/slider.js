@@ -1,6 +1,5 @@
 import './slider.css'
 import { observer } from 'mobx-react-lite'
-import store from './store'
 import { useEffect, useRef, useState } from 'react'
 import arrow from '../../img/slider/arrow.png'
 
@@ -9,38 +8,27 @@ const Slider = observer(({ card, amount }) => {
     const [translateX, setTranslateX] = useState(0)
     //Счётчик перелистнутых слайдов
     const [count, setCount] = useState(0)
-
     //Подсчитывает процент, на который должно произойти смещение
     const step = _ => 100 / amount
-
+    //Следующий слайд
     const next = _ => {
         setCount(p => p + 1)
-        if (count === amount) {
+        if (count === (amount - 1)) {
             setCount(0)
-            return setTranslateX(prev => prev = 0)
+            return setTranslateX(0)
         }
-        setTranslateX(prev => prev -= step())
 
-        console.log(count)
+        setTranslateX(p => p -= step())
     }
-
+    //Предыдущий слайд
     const prev = _ => {
         setCount(p => p - 1)
-        if (count === -1) {
-            count = (amount - 1)
-            return translateX = -66
+        if (count === -0) {
+            setCount(amount - 1)
+            return setTranslateX(-(step() * (amount - 1)))
         }
-        setTranslateX(prev => prev += step())
+        setTranslateX(prev => prev + step())
     }
-
-    // // amount - количество слайдов
-    // const { next, prev, translateX, getCounertSlides } = store
-
-    // const wrapper = useRef(0)
-
-    // useEffect(() => {
-    //     getCounertSlides(amount)
-    // }, [])
 
     return (
         <section className="slider">

@@ -1,8 +1,13 @@
+:root {
+    --size-icons: calc(16px + 34 * ((100vw - 320px) / (1940 - 320)));
+}
+
 #style {
     color: white;
     margin-top: 100px;
     width: 100%;
     display: flex;
+    overflow: hidden;
     justify-content: flex-end;
 }
 
@@ -28,7 +33,8 @@
 }
 
 #st_img {
-    width: 700px;
+    width: calc(200px + 500 * ((100vw - 320px) / (1940 - 320)));
+    /* height: calc(250px + 450 * ((100vw - 320px) / (1940 - 320))); */
 }
 
 #st_left-icons {
@@ -37,11 +43,62 @@
 }
 
 #st_left__icons img {
-    width: 50px;
-    height: 50px;
+    width: var(--size-icons);
+    height: var(--size-icons);
 }
 
 #st_left__icons img:not(:first-child) {
     margin-left: 30px;
+}
+
+#st_left__icons {
     margin-top: 60px;
+}
+
+@media (max-width:1220px) {
+    #st_left {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width:520px) {
+    #st_wrapper {
+        overflow: hidden;
+    }
+
+    #st_left__icons {
+        margin-top: 20px;
+    }
+
+    #st_left h3 {
+        font-size: 20px;
+    }
+
+    #st_left p {
+        font-size: 10px;
+    }
+
+    #st_left {
+        width: 60%;
+    }
+
+    #st_img {
+        width: 250px;
+        height: auto;
+    }
+}
+
+@media (max-width:430px) {
+    #st_wrapper {
+        overflow: hidden;
+        justify-content: flex-start;
+    }
+
+    #st_left {
+        width: 60% !important;
+    }
+
+    #st_img {
+        width: 40%;
+    }
 }

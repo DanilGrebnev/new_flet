@@ -5,22 +5,34 @@
 
 #e_wrapper {
     margin-top: 63px;
-    display: flex;
     position: relative;
     overflow: hidden;
     flex-wrap: wrap;
 }
 
+#e_wrapper>div {
+    display: flex;
+    max-width: 80%;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
 .e_card {
-    max-width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+
+}
+
+.e_card h5,
+.e_card p {
     text-align: center;
 }
 
-#e_wrapper .e_card:not(:first-child) {
-    margin-left: 20px;
-}
-
 #e_ok {
+    max-width: 95%;
     position: absolute;
     top: 20%;
     left: 5%;
@@ -31,4 +43,44 @@
     max-width: 350px;
     font-weight: 300;
     margin-top: 10px;
+}
+
+@media (max-width: 1250px) {
+    #e_wrapper {
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .e_card {
+        margin-left: 0 !important;
+    }
+
+    .e_card>img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 980px) {
+    #e_wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .e_card:not(:first-child) {
+        margin-top: 30px;
+    }
+
+    #e_wrapper>div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .e_card>img {
+        max-width: 300px;
+        width: 100%;
+    }
+
+    #e_ok {
+        display: none;
+    }
 }

@@ -12,14 +12,16 @@ const Ecosystem = _ => {
                 Мобильные приложения, позволяющие максимально автоматизировать все основные бизнес-процессы
             </p>
             <div id="e_wrapper">
-                {card.map((el, i) => <Card
-                    key={i}
-                    img={el.img}
-                    cls1="font_24"
-                    cls2="font_24"
-                    title={el.title}
-                    desc={el.desc}
-                />)}
+                <div>
+                    {card.map((el, i) => <Card
+                        key={i}
+                        img={el.img}
+                        cls1="font_24"
+                        cls2="font_24"
+                        title={el.title}
+                        desc={el.desc}
+                    />)}
+                </div>
                 <img src={ok} id="e_ok" />
             </div>
         </section>
