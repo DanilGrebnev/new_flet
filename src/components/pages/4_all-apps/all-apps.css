@@ -39,7 +39,7 @@
 
 @media screen and (max-width:860px) {
     #all-apps {
-        margin-top: 100px;
+        margin-top: var(--m-top-80) ;
     }
 
     #all-apps h1,

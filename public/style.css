@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 
 :root {
-    --m-top: calc(34px + 56 * ((100vw - 320px) / (1940 - 320)));
+    --m-top-80: calc(34px + 56 * ((100vw - 320px) / (1940 - 320)));
+    /* длинна img в bigcard */
+    --big_card-img: calc(200px + 360 * ((100vw - 320px) / (1940 - 320)));
+    /*ширины изображения в courier и store*/
+    --width_img-list: calc(100px + 300 * ((100vw - 320px) / (1940 - 320)));
+    /*ааптация изображения в блоке #system*/
+    --s_img-adaptive: calc(300px + 323 * ((100vw - 320px) / (1940 - 320)));
 }
 
 * {
@@ -26,7 +32,7 @@ body {
     background: black;
     display: flex;
     justify-content: center;
-    line-height: 1.5;
+    line-height: normal;
 }
 
 #root {
@@ -43,7 +49,7 @@ body {
 }
 
 .m_top {
-    margin-top: var(--m-top);
+    margin-top: var(--m-top-80);
 }
 
 h1 {
@@ -63,8 +69,20 @@ h1 {
     font-size: calc(32px + 48 * ((100vw - 320px) / (1920 - 320)));
 }
 
+.font_80-40 {
+    font-size: calc(40px + 40 * ((100vw - 320px) / (1940 - 320)));
+}
+
+.font_80-20 {
+    font-size: calc(20px + 60 * ((100vw - 320px) / (1940 - 320)));
+}
+
 .font_36 {
     font-size: calc(24px + 12 * ((100vw - 320px) / (1940 - 320)));
+}
+
+.font_36-20 {
+    font-size: calc(20px + 16 * ((100vw - 320px) / (1940 - 320)));
 }
 
 .font_24 {
@@ -75,16 +93,24 @@ h1 {
     font-size: calc(8px + 12 * ((100vw - 320px) / (1920 - 320)));
 }
 
+.font_20-10 {
+    font-size: calc(10px + 10 * ((100vw - 320px) / (1920 - 320)));
+}
+
+.font_15-8 {
+    font-size: calc(8px + 6 * ((100vw - 320px) / (1920 - 320)));
+}
+
 @media (max-width:1250px) {
     .container {
         padding: 0 20px;
     }
 }
 
-@media screen and (max-width:350px) {
+@media (max-width:350px) {
     .BtnGreen {
         font-size: 12px !important;
-        padding: 8px !important;
+        padding: 8px;
     }
 }
 
@@ -116,13 +142,21 @@ h1 {
 }
 
 /* Отмена адаптации */
-@media screen and (min-width:1940px) {
+@media (min-width:1940px) {
+    :root {
+        --big_card-img: 760px !important;
+        --width_img-list: 450px !important;
+        --s_img-adaptive: 750px !important;
+    }
+
     h1 {
         font-size: 80px;
     }
 
-    .font_80 {
-        font-size: 80px;
+    .font_80,
+    .font_80-40,
+    .font_80-20 {
+        font-size: 80px !important;
     }
 
     .h1_sub,
@@ -130,23 +164,30 @@ h1 {
         font-size: 24px !important;
     }
 
-    .font_36 {
+    .font_36,
+    .font_36-20 {
         font-size: 36px !important;
     }
 
-    .font_20 {
+    .font_20,
+    .font_20-10 {
         font-size: 20px;
+    }
+
+    .font_15-8 {
+        font-size: 15px;
     }
 
     .login_img--adaptive {
         width: 56px !important;
     }
 
-    #s_img{
+    #s_img {
         width: 700px !important;
     }
 
-    #wish .card{
+    #wish .card {
         width: 350px !important;
     }
+
 }

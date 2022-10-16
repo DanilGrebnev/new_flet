@@ -53,14 +53,8 @@
 
 @media (max-width:450px) {
     #system .BtnGreen {
-        padding: 15px;
+        padding: 10px 15px;
     }
-}
-
-@media (max-width:390px) {
-    /* #system .BtnGreen {
-        padding: 10px;
-    } */
 }
 
 @media (max-width:360px) {

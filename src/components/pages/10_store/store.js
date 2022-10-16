@@ -10,7 +10,7 @@ const Store = _ => {
         <section id="store" className="container">
             <img src={box} id="st_box" />
             <h1 className='font_80'>Приложение «Склад»</h1>
-            <BigCard cls="font_20" img={phone} list={card_list} />
+            <BigCard cls="font_20" img={phone} list={card_list.list} title={card_list.title} />
         </section>
     )
 }

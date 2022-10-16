@@ -17,7 +17,7 @@ const Footer = _ => {
                     <Link cls="font_20" id="#flet" text="О системе" />
                     <Link cls="font_20" id="#starts" text="Инструкция" />
                     <Link cls="font_20" id="#tarrifs" text="Тарифы" />
-                    <div>
+                    <div className='messegers_icons'>
                         <img src={telegram} />
                         <img src={vk} />
                         <img src={whatsap} />
@@ -36,10 +36,15 @@ const Footer = _ => {
                         mail@flet.su
                     </a>
                     <Login />
+                    <div className='messegers_icons'>
+                        <img src={telegram} />
+                        <img src={vk} />
+                        <img src={whatsap} />
+                    </div>
                 </div>
                 <div id="f_right">
                     <Logo />
-                    <p>Copyrights 2022 © iVoлга</p>
+                    <p className='font_15-8'>Copyrights 2022 © iVoлга</p>
                 </div>
             </section>
         </section>

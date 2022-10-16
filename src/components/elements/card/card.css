@@ -24,6 +24,6 @@
     max-width: 300px;
     width: 100%;
     margin: 21px 0 65px 0;
-    /* font-size: calc(11px + 13 * ((100vw - 320px) / (1920 - 320))); */
+    font-size: calc(11px + 13 * ((100vw - 320px) / (1920 - 320)));
 }
 

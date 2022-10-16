@@ -1,5 +1,5 @@
 #starts {
-    margin-top: var(--m-top);
+    margin-top: var(--m-top-80);
     display: grid;
     position: relative;
     width: 100%;
@@ -45,9 +45,10 @@
 }
 
 @media (max-width: 860px) {
-    #s_img{
+    #s_img {
         margin: 0;
     }
+
     #starts h1,
     #starts p {
         padding: 20px;
@@ -61,4 +62,10 @@
         grid-template-rows: repeat(3, min-content);
     }
 
+}
+
+@media (min-width: 1940px) {
+    #starts a>img {
+        width: 50px;
+    }
 }

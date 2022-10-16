@@ -84,3 +84,9 @@
         display: none;
     }
 }
+
+@media (max-width: 430px) {
+    #eco{
+        display: none;
+    }
+}

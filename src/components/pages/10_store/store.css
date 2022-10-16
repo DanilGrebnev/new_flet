@@ -1,5 +1,5 @@
 #store {
-    margin-top: 120px;
+    margin-top: var(--m-top-80);
     position: relative;
 }
 
@@ -7,12 +7,27 @@
     margin-bottom: 40px;
     text-align: end;
 }
-#store .big_card__img{
+
+#store .big_card__img {
     margin-right: 20px;
     margin-left: 20px;
 }
+
 #st_box {
+    width: var(--width_img-list);
     position: absolute;
     z-index: -1;
     top: -8%;
+}
+
+@media (max-width:730px) {
+    #store>h1 {
+        display: none;
+    }
+}
+
+@media (min-width:1940px) {
+    #st_box {
+        /* width: 450px; */
+    }
 }

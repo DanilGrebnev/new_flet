@@ -1,32 +1,49 @@
+:root {
+    --form_pt: calc(16px + 30 * ((100vw - 320px) / (1940 - 320)));
+    --form_plr: calc(31px + 70 * ((100vw - 320px) / (1940 - 320)));
+    --form_h2: calc(16px + 26 * ((100vw - 320px) / (1940 - 320)));
+    --form_h4: calc(12px + 12 * ((100vw - 320px) / (1940 - 320)));
+
+}
+
 #form {
-    padding: 50px 100px;
-    margin-top: 160px;
+    padding: var(--form_pt) var(--form_plr);
+    margin-top: var(--m-top-80);
     display: flex;
     flex-direction: column;
     align-items: center;
     background: white;
 }
 
-#form section {
-    display: flex;
-    justify-content: space-between;
+#inp_wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
 }
 
 #form h2 {
-    font-size: 42px;
+    text-align: center;
+    font-size: var(--form_h2);
     text-align: center;
     max-width: 1500px;
     width: 100%;
     margin: 20px 0 70px 0;
 }
 
+#form h4 {
+    text-align: center;
+    font-size: var(--form_h4);
+}
+
 #form input {
     outline: none;
     border: none;
     border-bottom: 1px solid green;
-    width: 320px;
+    width: 100%;
     margin-bottom: 88px;
 }
+
+
 
 #f_submit {
     display: flex;
@@ -39,7 +56,8 @@
     height: 60px;
     box-sizing: content-box;
     display: inline-block;
-    width: 330px;
+    max-width: 330px;
+    width: 100%
 }
 
 #f_submit p {
@@ -49,4 +67,34 @@
 
 #f_submit span {
     color: green;
+}
+
+@media (max-width:1060px) {
+    #f_submit {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #form .BtnGreen {
+        margin-top: 30px;
+        width: 152px;
+        padding: 9px;
+        height: auto;
+    }
+}
+
+@media (max-width:680px) {
+    #inp_wrap {
+        grid-template-columns: auto;
+    }
+
+    #inp_wrap input {
+        margin-bottom: 0;
+    }
+
+    #f_submit {
+        margin-top: 30px;
+        align-items: center;
+    }
+
 }

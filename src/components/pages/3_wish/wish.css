@@ -1,5 +1,5 @@
 #wish {
-    margin-top: 121px;
+    margin-top: var(--m-top-80);
     width: 100%;
     height: 866px;
     position: relative;
@@ -128,11 +128,19 @@
 
 }
 
-@media (max-width: 410px){
-    #wish .slider{
+@media (max-width: 410px) {
+    #wish {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #wish .slider {
+        width: 300px;
         justify-content: center;
     }
-    #wish .slider .next, #wish .slider .prev{
-        display: none;
+
+    #wish .card {
+        width: 245px !important;
     }
 }
