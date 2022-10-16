@@ -38,13 +38,12 @@
 
 #burger {
     display: none;
-    max-width: 55px;
     min-width: 45px;
     height: min-content;
 }
 
 #burger>div {
-    height: 5px;
+    height: 3px;
     background: white;
     border-radius: 5px;
 }
@@ -68,5 +67,11 @@
 
     #h_wrapper>a:not(.login) {
         display: none;
+    }
+}
+
+@media (max-width:660) {
+    #burger {
+        max-width: 35px;
     }
 }

@@ -1,3 +1,23 @@
-#menu {
-    /* min-width: 55px; */
+menu {
+    position: absolute;
+    width: 0%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    z-index: 2;
+    left: 0;
+    transition: 1s;
+    overflow: hidden;
+}
+
+menu.active {
+    width: 50%;
+}
+
+menu>a {
+    font-size: 20px !important;
+    font-weight: bold;
+    color: white;
+    display: block;
+    margin-left: 5%;
+    margin-top: 20px;
 }

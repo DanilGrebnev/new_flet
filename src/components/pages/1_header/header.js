@@ -1,13 +1,13 @@
 import './header.css'
-import logo from '../../img/1_header/logo.png'
 import Login from '../../elements/login/login'
 import Logo from '../../elements/logo/logo'
 import Link from './h_link'
 
-const Header = _ => {
+const Header = ({ setOpen }) => {
+
     return (
         <section id="header" className='container'>
-            <div id='burger'>
+            <div onClick={() => setOpen(p => !p)} id='burger'>
                 <div></div>
                 <div></div>
                 <div></div>

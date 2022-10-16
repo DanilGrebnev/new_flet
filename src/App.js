@@ -12,11 +12,17 @@ import Courier from './components/pages/11_courier/courier';
 import Tarrifs from './components/pages/12_tarrifs/tarrifs';
 import Form from './components/pages/13_form/form';
 import Footer from './components/pages/14_footer/footer';
+import Menu from './components/pages/1_header/menu/menu';
+import { useState, useEffect } from 'react';
 
 const App = _ => {
+
+  const [open, setOpen] = useState(false)
+
   return (
     <>
-      <Header />
+      <Menu setOpen={setOpen} open={open} />
+      <Header setOpen={setOpen} />
       <System />
       <Wish />
       <AllApps />
