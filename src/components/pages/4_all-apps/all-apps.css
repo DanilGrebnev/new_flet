@@ -12,7 +12,8 @@
     max-width: 733px;
 }
 
-#all-apps button {
+#all-apps .BtnGreen {
+    display: inline-block;
     margin-top: 53px;
 }
 
@@ -70,7 +71,7 @@
         height: 250px;
     }
 
-    #all-apps button {
+    #all-apps .BtnGreen {
         padding: 10px 15px;
     }
 }

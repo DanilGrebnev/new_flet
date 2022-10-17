@@ -2,7 +2,7 @@ menu {
     position: absolute;
     width: 0%;
     height: 100vh;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .9);
     z-index: 2;
     left: 0;
     transition: 1s;
@@ -10,7 +10,14 @@ menu {
 }
 
 menu.active {
-    width: 50%;
+    width: 100%;
+}
+
+menu .logo {
+    margin: 30px 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 menu>a {
@@ -19,5 +26,14 @@ menu>a {
     color: white;
     display: block;
     margin-left: 5%;
-    margin-top: 20px;
+    margin-top: 25px;
+}
+
+menu>div {
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+menu .mess_link:not(:first-child){
+    margin-left: 20px;
 }

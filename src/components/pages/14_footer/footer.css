@@ -35,6 +35,11 @@
     width: 200px;
 }
 
+.messegers_icons {
+    display: flex;
+    justify-content: space-between;
+}
+
 .messegers_icons img {
     width: var(--w_messagers_cions);
 }
@@ -73,6 +78,7 @@
     }
 
     #f_center .messegers_icons {
+        max-width: 150px;
         display: flex;
         margin-top: 40px;
     }

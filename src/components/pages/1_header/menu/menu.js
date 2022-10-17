@@ -1,5 +1,7 @@
 import Link from '../h_link'
+import Logo from '../../../elements/logo/logo'
 import './menu.css'
+import MessegerIcons from '../../../elements/messegerIcons/messegerIcons'
 
 const Menu = ({ open, setOpen }) => {
 
@@ -10,9 +12,14 @@ const Menu = ({ open, setOpen }) => {
 
     return (
         <menu onClick={openMenu} className={open ? "active" : ""}>
+            <Logo />
             <Link id="#flet" text="О системе" />
             <Link id="#starts" text="Инструкция" />
             <Link id="#tarrifs" text="Тарифы" />
+            <Link id="#form" text="Обратная связь" />
+            <div>
+                <MessegerIcons />
+            </div>
         </menu>
     )
 }

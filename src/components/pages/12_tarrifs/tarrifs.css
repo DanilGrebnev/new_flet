@@ -26,6 +26,7 @@
     .slider .t_card {
         width: 300px;
         margin: 0 20px 0 20px;
+        padding: 0;
     }
 
     .t_card li {
@@ -52,7 +53,13 @@
 
 @media (max-width:430px) {
     #tarrifs .slider_wrapper {
-        height: 340px;
+        height: 355px !important;
+        width: 295px;
+    }
+
+    #tarrifs .t_card {
+        width: 255px !important;
+        height: min-content;
     }
 
     #tarrifs .slider {
@@ -60,18 +67,32 @@
     }
 }
 
-@media (max-width:390px) {
+@media (max-width:350px) {
     #tarrifs .slider_wrapper {
-        width: 340px !important;
-        height: 300px !important;
+        height: 355px !important;
+        width: 275px;
+    }
+
+    #tarrifs .t_card {
+        width: 235px !important;
+        height: min-content;
+    }
+}
+@media (max-width:330px) {
+    #tarrifs .slider_wrapper {
+        width: 255px;
+        height: 355px !important;
+    }
+
+    #tarrifs .t_card {
+        width: 235px !important;
+        height: min-content;
+        
     }
 }
 
 @media (max-width:320px) {
-    .t_card{
-        width: 235px !important;
-    }
-    .t_img--down{
-        transform: scale(.7);
+    .t_img--down {
+        transform: scale(.9);
     }
 }

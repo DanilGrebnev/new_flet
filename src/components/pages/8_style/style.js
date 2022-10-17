@@ -20,9 +20,9 @@ const Style = _ => {
                         Сделайте его своим
                     </p>
                     <div id="st_left__icons">
-                        <img src={apple}></img>
-                        <img src={gplay}></img>
-                        <img src={huawei}></img>
+                        <a><img src={apple}></img></a>
+                        <a> <img src={gplay}></img></a>
+                        <a> <img src={huawei}></img></a>
                     </div>
                 </div>
                 <img src={phone} id="st_img" />

@@ -38,17 +38,20 @@
     /* height: calc(250px + 450 * ((100vw - 320px) / (1940 - 320))); */
 }
 
-#st_left-icons {
+#st_left__icons {
     display: flex;
-
 }
 
-#st_left__icons img {
+#st_left__icons a {
+    display: block;
+}
+
+#st_left__icons a img {
     width: var(--size-icons);
     height: var(--size-icons);
 }
 
-#st_left__icons img:not(:first-child) {
+#st_left__icons a:not(:first-child) {
     margin-left: 30px;
 }
 

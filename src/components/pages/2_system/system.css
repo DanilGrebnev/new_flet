@@ -9,6 +9,10 @@
     position: relative;
 }
 
+#system .BtnGreen{
+    display: inline-block;
+}
+
 #system h1 {
     max-width: 708px;
     width: 100%;

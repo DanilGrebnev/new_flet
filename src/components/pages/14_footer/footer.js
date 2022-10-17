@@ -1,13 +1,14 @@
 import Login from '../../elements/login/login'
 import Logo from '../../elements/logo/logo'
 import './footer.css'
-import vk from '../../img/14_footer/vk.png'
-import telegram from '../../img/14_footer/telegram.png'
-import whatsap from '../../img/14_footer/whatsapp.png'
+// import vk from '../../img/14_footer/vk.png'
+// import telegram from '../../img/14_footer/telegram.png'
+// import whatsap from '../../img/14_footer/whatsapp.png'
 import phone from '../../img/14_footer/phone.png'
 import location from '../../img/14_footer/location.png'
 import email from '../../img/14_footer/email.png'
 import Link from '../1_header/h_link'
+import MessegerIcons from '../../elements/messegerIcons/messegerIcons'
 
 const Footer = _ => {
     return (
@@ -18,28 +19,24 @@ const Footer = _ => {
                     <Link cls="font_20" id="#starts" text="Инструкция" />
                     <Link cls="font_20" id="#tarrifs" text="Тарифы" />
                     <div className='messegers_icons'>
-                        <img src={telegram} />
-                        <img src={vk} />
-                        <img src={whatsap} />
+                        <MessegerIcons />
                     </div>
                 </div>
                 <div id='f_center'>
-                    <a>
+                    <a href="tel://+7 904 408 94 94">
                         <img src={phone} />
                         +7 904 408 94 94</a>
-                    <a>
+                    <a href="geo:48.755945,44.788347">
                         <img src={location} />
                         г. Волжский, ул. Ленина, 308Ж, оф. 14
                     </a>
-                    <a>
+                    <a href="mailto:mail@flet.su">
                         <img src={email} />
                         mail@flet.su
                     </a>
                     <Login />
                     <div className='messegers_icons'>
-                        <img src={telegram} />
-                        <img src={vk} />
-                        <img src={whatsap} />
+                        <MessegerIcons />
                     </div>
                 </div>
                 <div id="f_right">
