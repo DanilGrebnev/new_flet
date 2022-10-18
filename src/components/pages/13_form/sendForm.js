@@ -1,6 +1,6 @@
 import { makeAutoObservable } from "mobx"
 
-class Send {
+class SendForm {
     constructor() {
         makeAutoObservable(this)
     }
@@ -84,4 +84,4 @@ class Send {
     }
 }
 
-export default new Send()
+export default new SendForm()

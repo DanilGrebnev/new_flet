@@ -1,7 +1,7 @@
 import './courier.css'
 import BigCard from '../../elements/bigCard/bigCard'
 import phone from '../../img/11_courier/phone.png'
-import truck from '../../img/11_courier/truck.svg'
+import truck from '../../img/11_courier/truck.png'
 import store from './list'
 
 const Courier = _ => {

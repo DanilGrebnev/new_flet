@@ -1,3 +1,11 @@
-.mess_link > img {
+:root {
+    --w_messagers_cions: calc(10px + 10 * ((100vw - 320px) / (1940 - 320)));
+}
+
+.mess_link>img {
+    width: var(--w_messagers_cions);
+}
+
+menu .mess_link>img {
     width: 25px;
 }

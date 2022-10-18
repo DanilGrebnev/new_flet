@@ -16,7 +16,8 @@ const Menu = ({ open, setOpen }) => {
             <Link id="#flet" text="О системе" />
             <Link id="#starts" text="Инструкция" />
             <Link id="#tarrifs" text="Тарифы" />
-            <Link id="#form" text="Обратная связь" />
+            <Link id="#form" text="Оставить заявку" />
+            <Link id="#form" text="Контакты" />
             <div>
                 <MessegerIcons />
             </div>

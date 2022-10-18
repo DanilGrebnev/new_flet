@@ -1,6 +1,5 @@
 import './form.css'
 import BtnGreen from '../../elements/BtnGreen/BtnGreen'
-import { useState } from 'react'
 import { observer } from 'mobx-react-lite'
 import Send from './sendForm'
 
@@ -20,8 +19,8 @@ const Form = observer(_ => {
             <form action="#" method="post">
                 <section id="inp_wrap">
                     <div>
-                        <p>Имя</p>
-                        <input value={name} onChange={setName} type="text" />
+                        <p id="name">Имя</p>
+                        <input id="input_name" value={name} onChange={setName} type="text" />
                     </div>
                     <div>
                         <p>Телефон</p>

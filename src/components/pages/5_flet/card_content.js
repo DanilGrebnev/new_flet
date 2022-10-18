@@ -3,7 +3,7 @@ import truck from '../../img/5_flet/truck.png'
 import box from '../../img/5_flet/box.png'
 import people from '../../img/5_flet/people.png'
 import wallet from '../../img/5_flet/wallet.png'
-import discount from '../../img/5_flet/discount.svg'
+import discount from '../../img/5_flet/discount.png'
 
 const card_content = [
     {

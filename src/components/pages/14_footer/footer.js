@@ -26,7 +26,7 @@ const Footer = _ => {
                     <a href="tel://+7 904 408 94 94">
                         <img src={phone} />
                         +7 904 408 94 94</a>
-                    <a href="geo:48.755945,44.788347">
+                    <a target="_blank" href="https://yandex.ru/maps/-/CCUZ5LUEPA">
                         <img src={location} />
                         г. Волжский, ул. Ленина, 308Ж, оф. 14
                     </a>

@@ -62,6 +62,7 @@
 }
 
 #f_submit p {
+    line-height: 1.5;
     max-width: 750px;
     padding-right: 30px;
 }

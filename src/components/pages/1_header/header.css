@@ -13,7 +13,11 @@
     position: relative;
 }
 
-#header a:not(.login):before {
+#h_wrapper a {
+    padding-bottom: 5px;
+}
+
+#h_wrapper a:not(.login):before {
     position: absolute;
     content: "";
     display: block;
