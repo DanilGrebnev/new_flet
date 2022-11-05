@@ -6,7 +6,7 @@
     --big_card-img: calc(200px + 360 * ((100vw - 320px) / (1940 - 320)));
     /*ширины изображения в courier и store*/
     --width_img-list: calc(100px + 300 * ((100vw - 320px) / (1940 - 320)));
-    /*ааптация изображения в блоке #system*/
+    /*адаптация изображения в блоке #system*/
     --s_img-adaptive: calc(300px + 323 * ((100vw - 320px) / (1940 - 320)));
 }
 
@@ -23,25 +23,37 @@ html {
     scroll-behavior: smooth;
 }
 
-a {
-    cursor: pointer;
-    color: white;
-}
-
 body {
-    background: black;
     display: flex;
     justify-content: center;
     line-height: normal;
 }
 
 #root {
+    width: 100%;
+    background: black;
+}
+
+#App {
+    background: black;
     max-width: 1440px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    margin: auto;
+}
+
+#App a {
+    color: white;
+    cursor: pointer;
+}
+
+#App h1 {
+    color: white;
+    font-weight: 600;
+    line-height: 1;
 }
 
 .container {
@@ -51,12 +63,6 @@ body {
 
 .m_top {
     margin-top: var(--m-top-80);
-}
-
-h1 {
-    color: white;
-    font-weight: 600;
-    line-height: 1;
 }
 
 .h1_sub {
@@ -148,6 +154,7 @@ h1 {
         --big_card-img: 760px !important;
         --width_img-list: 450px !important;
         --s_img-adaptive: 750px !important;
+        --m-top-80: 80px !important;
     }
 
     h1 {
